@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Assignment-2 JS</title>
+</head>
+
+<body>
+
+    <header>
+        <div class='d-flex justify-content-center bg-primary'>
+            <h1 id="heading">Assignment-2 JavaScript</h1>
+        </div>
+    </header>
+
+    <div class="d-flex row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 userContainer">
+            <!-- String concatenation -->
+            <h3>Concatenation</h3>
+            <div class="container-def">
+                <input id='input1' class="inputClass" type="text" placeholder="Enter string one" />
+                <input id='input2' class="inputClass" type="text" placeholder="Enter string two" />
+                <button class="btn btn-primary" onclick="concatBtn();">Enter</button>
+                <input type="text" id="concatString">
+            </div>
+
+            <!-- Split Emails -->
+            <h3>Split Semi-Colon Separated Emails</h3>
+            <div class="container-def">
+                <input id='input3' class="inputClass" type="text" placeholder="Enter string to be splitted" />
+                <button class="btn btn-primary" onclick="splitBtn();">Enter</button>
+                <input type="text" id="splitString">
+            </div>
+
+            <!--Find Occurances  -->
+            <h3>Check Occurances</h3>
+            <div class="container-def">
+                <input id='input4' class="inputClass" type="text"
+                    placeholder="Enter array in format: [ 0, 0, 1, 1, 1, 2 ]" />
+                <input id='input5' class="inputClass" type="text" placeholder="Enter item to be found" />
+                <button class="btn btn-primary" onclick="occurString();">Enter</button>
+                <input type="text" id="valueOccur">
+            </div>
+
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <!--Include Javascript -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
